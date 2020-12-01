@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2020 at 02:42 PM
+-- Generation Time: Dec 01, 2020 at 03:56 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -45,6 +45,49 @@ INSERT INTO `contact` (`id`, `contact_name`, `contact_email`, `contact_applicati
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `loan`
+--
+
+CREATE TABLE `loan` (
+  `id` int(20) NOT NULL,
+  `borrow` varchar(50) DEFAULT NULL,
+  `fname` varchar(50) DEFAULT NULL,
+  `lname` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `street` varchar(250) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(50) DEFAULT NULL,
+  `mobile` varchar(11) DEFAULT NULL,
+  `months_at_address` varchar(20) DEFAULT NULL,
+  `homeowner` varchar(20) DEFAULT NULL,
+  `license_state` varchar(20) DEFAULT NULL,
+  `license_number` varchar(20) DEFAULT NULL,
+  `license_exp` varchar(20) DEFAULT NULL,
+  `dob` varchar(20) DEFAULT NULL,
+  `social_security_number` varchar(20) DEFAULT NULL,
+  `csocial_security_number` varchar(50) DEFAULT NULL,
+  `source_of_income` varchar(50) DEFAULT NULL,
+  `employer_name` varchar(50) DEFAULT NULL,
+  `months_employed` varchar(50) DEFAULT NULL,
+  `emploer_phone` varchar(50) DEFAULT NULL,
+  `gross_monthly_income` varchar(50) DEFAULT NULL,
+  `credit_score` varchar(50) DEFAULT NULL,
+  `aba_routing_number` varchar(50) DEFAULT NULL,
+  `acc_number` varchar(50) DEFAULT NULL,
+  `cacc_number` varchar(50) DEFAULT NULL,
+  `type_of_acc` varchar(50) DEFAULT NULL,
+  `repay_by` varchar(50) DEFAULT NULL,
+  `card_type` varchar(50) DEFAULT NULL,
+  `card_brand` varchar(50) DEFAULT NULL,
+  `card_cc` varchar(50) DEFAULT NULL,
+  `card_exp` varchar(50) DEFAULT NULL,
+  `card_cvv` varchar(50) DEFAULT NULL,
+  `agree_terms` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `loan-request`
 --
 
@@ -66,6 +109,12 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `loan`
+--
+ALTER TABLE `loan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `loan-request`
 --
 ALTER TABLE `loan-request`
@@ -80,6 +129,12 @@ ALTER TABLE `loan-request`
 --
 ALTER TABLE `contact`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `loan`
+--
+ALTER TABLE `loan`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `loan-request`
