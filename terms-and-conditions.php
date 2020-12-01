@@ -39,7 +39,7 @@
                 <div class="tcontentfull">
                     <h2>Terms Of Use</h2>
                     <p>Effective Date: January 21, 2017</p>
-                    <p>These Terms and Conditions of Use are the formal agreement between slickcashloan.com (hereinafter
+                    <p>These Terms and Conditions of Use are the formal agreement between paydayme.com (hereinafter
                         we, our, ours, us, Company) and a user (hereinafter User, Users, You, Your, Yours) of the
                         Website (hereinafter Website, Site), who continues to exploit the Website and attempts to use
                         the services presented by the Company. The Terms and Conditions of Use regulate the relationship
@@ -186,7 +186,7 @@
                         jurisdiction to handle such cases in lieu with this alternate dispute method.</p>
                     <p>If You reject to these arbitration clauses, then You should send a letter in writing to the
                         Company within ten days (10) after accepting these Terms and Conditions of Use. You must send
-                        the request to: slickcashloan.com. The letter should clearly have Your first and last name,
+                        the request to: paydayme.com. The letter should clearly have Your first and last name,
                         telephone number, address and email address along with the statement "I reject the arbitration
                         clause of the Company stated on its Website on its Terms Conditions of Use page." In case You
                         reject this provision, You are obliged to bring up a legal case to any court authorized to

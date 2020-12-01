@@ -37,7 +37,7 @@
                 <div class="tcontentfull">
                     <h2>Privacy Policy</h2>
                     <p>Effective Date: January 21, 2017</p>
-                    <p>The Privacy Policy on slickcashloan.com (hereinafter we, us, our, ours, Website, Site) is the
+                    <p>The Privacy Policy on paydayme.com (hereinafter we, us, our, ours, Website, Site) is the
                         formal document, which determines and explains how the information of the user (hereinafter
                         User, Users, You, Your, Yours) is collected, stored, shared and used on the Website. This
                         document was elaborated to make formal guarantee of the protection and security of the
