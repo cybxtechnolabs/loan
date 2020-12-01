@@ -242,14 +242,14 @@
 
 
                     <div class=formcontrol>
-                        <form action="/form.php" method="get">
+                        <!-- <form action="/form.php" method="get">
                             <div class="fieldset">
                                 <div class="fields clearfix"><input type="hidden" name="src"
                                         value="seo-home-privacy"><input type="hidden" name="msclkid"
                                         value="5fc4a0e0e9b2d" /></div><button type="submit" class="btn">Start
                                     Now</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>

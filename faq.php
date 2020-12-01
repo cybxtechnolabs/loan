@@ -237,13 +237,13 @@
 
 
                     <div class=formcontrol>
-                        <form action="/form.php" method="get">
+                        <!-- <form action="/form.php" method="get">
                             <div class="fieldset">
                                 <div class="fields clearfix"><input type="hidden" name="src" value="seo-faq-last"><input
                                         type="hidden" name="msclkid" value="5fc4974c630f3" /></div><button type="submit"
                                     class="btn">Start Now</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>

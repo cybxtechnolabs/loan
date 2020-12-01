@@ -250,14 +250,14 @@
                     <p>BY USING THE WEBSITE, YOU AGREE TO ABIDE BY THE ABOVE TERMS OF USE</p>
                     <p>WE RECOMMEND TO PRINT THE TERMS OF USE AND RETAIN THE COPY OF THE AGREEMENT FOR YOUR RECORDS</p>
                     <div class=formcontrol>
-                        <form action="/form.php" method="get">
+                        <!-- <form action="/form.php" method="get">
                             <div class="fieldset">
                                 <div class="fields clearfix"><input type="hidden" name="src"
                                         value="seo-home-terms"><input type="hidden" name="msclkid"
                                         value="5fc4a140cd0f0" /></div><button type="submit" class="btn">Start
                                     Now</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
