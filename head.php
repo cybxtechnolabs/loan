@@ -32,7 +32,7 @@
     <link rel=icon href="/favicon.ico" type="image/x-icon" />
     <link rel=canonical href="https://paydayme.com/" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-min.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
     <link rel="mask-icon" href="/logo.svg" color="#f46e39">
     <meta name="msapplication-TileColor" content="#2097cf">
     <meta name="theme-color" content="#ffffff">
