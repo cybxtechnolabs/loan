@@ -15,7 +15,7 @@
                 <div class=collapse>
                     <nav>
                         <ul>
-                            <li ><a href="<a href="<?php echo BASEURL; ?>">Home</a></li>
+                            <li><a href="<?php echo BASEURL; ?>">Home</a></li>
                             <!-- <li><a href="/how-it-works.php">How it works</a></li> -->
                             <li ><a href="faq.php">FAQ</a></li>
                             <li><a href="your-privacy-rights.php">Privacy rights</a></li>
