@@ -14,16 +14,16 @@
             </p>
             <div class=footerimgcenter>
                 <a href="https://www.facebook.com/slickcashloan/" target=_blank rel="noopener"><img
-                        src="/assets/images/layout/facebook-icon.png" width=24 height=24 alt="facebook"
+                        src="assets/images/layout/facebook-icon.png" width=24 height=24 alt="facebook"
                         title="facebook" /></a>
                         
                 &nbsp;
                 <a href="https://twitter.com/slickcashloan" target=_blank rel="noopener"><img
-                        src="/assets/images/layout/Twitter-icon.png" width=24 height=24 alt="twitter"
+                        src="assets/images/layout/Twitter-icon.png" width=24 height=24 alt="twitter"
                         title="twitter" /></a>
                 &nbsp;
                 <a href="https://www.youtube.com/channel/UCcoXQ3Yab34FNMO5yoon5ag" target=_blank rel="noopener"><img
-                        src="/assets/images/layout/youtube_icon.png" width=24 height=24 alt="youtube"
+                        src="assets/images/layout/youtube_icon.png" width=24 height=24 alt="youtube"
                         title="youtube" /></a>
             </div>
         </div>

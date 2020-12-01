@@ -11,14 +11,14 @@
 
         <header>
             <div class=container>
-                <div class="logotext">PayDay Loan</div>
+                <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>">PayDay Loan</a></div>
                 <a href="#" aria-label="mobile-navigation"
                     class=btn-collapse><span></span><span></span><span></span></a>
 
                 <div class=collapse>
                     <nav>
                         <ul>
-                            <li><a href="/">Home</a></li>
+                            <li><a href="<?php echo BASEURL; ?>">Home</a></li>
                             <!-- <li><a href="/how-it-works.php">How it works</a></li> -->
                             <li><a href="faq.php">FAQ</a></li>
                             <li><a href="your-privacy-rights.php">Privacy rights</a></li>

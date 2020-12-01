@@ -3,6 +3,8 @@
 
 define("SITENAME", "PAYDAY");
 
+define("BASEURL", "http://localhost/PROJECTS/git/loan/");
+
 define("SERVER", "localhost");
 define("DB_NAME", "loan");
 define("DB_USER", "root");
