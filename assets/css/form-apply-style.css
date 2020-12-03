@@ -78,6 +78,7 @@
     background-color: #bbbbbb;
     border: none;  
     /* border-radius: 50%; */
+    border-radius: 20px;
     display: inline-block;
     opacity: 0.5;
   }
