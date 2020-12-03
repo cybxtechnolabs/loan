@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2020 at 03:56 PM
+-- Generation Time: Dec 03, 2020 at 04:12 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -24,27 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
---
-
-CREATE TABLE `contact` (
-  `id` int(10) NOT NULL,
-  `contact_name` varchar(20) NOT NULL,
-  `contact_email` varchar(20) NOT NULL,
-  `contact_application_number` varchar(10) NOT NULL,
-  `contact_message` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`id`, `contact_name`, `contact_email`, `contact_application_number`, `contact_message`) VALUES
-(1, 'sdfsdf', 'sdfdsf', 'sdfdsf', '                     sdfdsf  \r\n                ');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `loan`
 --
 
@@ -54,6 +33,7 @@ CREATE TABLE `loan` (
   `fname` varchar(50) DEFAULT NULL,
   `lname` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
+  `cemail` varchar(50) DEFAULT NULL,
   `street` varchar(250) DEFAULT NULL,
   `city` varchar(50) DEFAULT NULL,
   `state` varchar(50) DEFAULT NULL,
@@ -85,28 +65,9 @@ CREATE TABLE `loan` (
   `agree_terms` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `loan-request`
---
-
-CREATE TABLE `loan-request` (
-  `id` int(10) NOT NULL,
-  `borrow` varchar(20) NOT NULL,
-  `state` varchar(20) NOT NULL,
-  `status` varchar(2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `contact`
---
-ALTER TABLE `contact`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `loan`
@@ -115,32 +76,14 @@ ALTER TABLE `loan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `loan-request`
---
-ALTER TABLE `loan-request`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `contact`
---
-ALTER TABLE `contact`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `loan`
 --
 ALTER TABLE `loan`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `loan-request`
---
-ALTER TABLE `loan-request`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
