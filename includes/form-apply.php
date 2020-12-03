@@ -10,7 +10,7 @@
         </select>
 
         <label for="state"> Select State</label>
-        <?php include('state-dropdown.php'); ?>
+        <?php include('includes/state-dropdown.php'); ?>
         <br><br>
         <input type="hidden" value="home" name="home">
         <input type="submit" value="Submit">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 
-<?php include('head.php'); ?>
+<?php include('layouts/head.php'); ?>
 
 
 <link rel="stylesheet" href="assets/css/form-style.css">
@@ -9,7 +9,7 @@
 <body>
     <div class=page id=main-page>
 
-        <header>
+        <!-- <header>
             <div class=container>
                 <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>">PayDay Loan</a></div>
                 <a href="#" aria-label="mobile-navigation"
@@ -19,7 +19,6 @@
                     <nav>
                         <ul>
                             <li><a href="<?php echo BASEURL; ?>">Home</a></li>
-                            <!-- <li><a href="/how-it-works.php">How it works</a></li> -->
                             <li><a href="faq.php">FAQ</a></li>
                             <li><a href="your-privacy-rights.php">Privacy rights</a></li>
                             <li><a href="terms-and-conditions.php">Terms</a></li>
@@ -29,9 +28,9 @@
                     </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
 
-        <!-- <?php //include('header.php'); ?> -->
+         <?php include('layouts/header.php'); ?> 
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -133,7 +132,7 @@
 
                                     <!-- <img class=mainimgpaint src="/assets/images/layout/quick-and-easy-cash-loans.png"
                                 alt="quick and easy cash loans" /> -->
-                                    <?php include('contact-form.php'); ?>
+                                    <?php include('includes/contact-form.php'); ?>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +145,7 @@
     </div>
 
 
-    <?php include('footer.php'); ?>
+    <?php include('layouts/footer.php'); ?>
 </body>
 
 </html>

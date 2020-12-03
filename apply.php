@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
 
-<?php include('head.php'); ?>
+<?php include('layouts/head.php'); ?>
 
 
 <link rel="stylesheet" href="assets/css/form-apply-style.css">
@@ -121,7 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         <!-- <img class=mainimgpaint src="/assets/images/layout/quick-and-easy-cash-loans.png"
                                 alt="quick and easy cash loans" /> -->
-                        <?php include('form-apply-detail.php'); ?>
+                        <?php include('includes/form-apply-detail.php'); ?>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
 
-    <?php include('footer.php'); ?>
+    <?php include('layouts/footer.php'); ?>
 </body>
 
 </html>
