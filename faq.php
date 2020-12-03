@@ -2,7 +2,7 @@
 <html lang=en>
 
 <?php include('head.php'); ?>
-<link rel="stylesheet" href="form-style.css">
+<link rel="stylesheet" href="assets/css/form-style.css">
 
 <body>
     <div class=page id=main-page>
@@ -58,7 +58,7 @@
                     </p>
                     <p><strong>How Can I Qualify for a Short Term Loan?
                         </strong></p>
-                    <p>It’s easy to be approved for a payday loan than other types of credit. PaydayMe.com can connect
+                    <p>It’s easy to be approved for a payday loan than other types of credit. <a href="<?php echo BASEURL; ?>">PaydayMe.com </a> can connect
                         great percentages for the users that request a loan from us. You need to have an active bank
                         account in your name, be at least 18years of age, be a permanent resident and legally employed
                         in the United States, have a current home/cell and work phone number, have a valid email

@@ -4,7 +4,7 @@
 <?php include('head.php'); ?>
 
 
-<link rel="stylesheet" href="form-apply-style.css">
+<link rel="stylesheet" href="assets/css/form-apply-style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -59,11 +59,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    
     $posted_data = $_POST;
 
-   
+    // echo "<pre>";
+
+    // print_r($posted_data);
+    // die();
+
+
     $borrow  = '';
     if(isset($posted_data['home'])){
-        $borrow = $posted_data['borrow'];
+        $borrow = str_replace("$","",$posted_data['borrow']);
+        $state = $posted_data['state'];
     } else {
+
+        //validation
+
+
         $col_name = '';
         $value = '';
         foreach( $posted_data as $col => $data) {

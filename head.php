@@ -45,7 +45,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Online Installment Loans | $3000 Instant Approval | Slick Cash Loan">
     <meta name="twitter:url" content="https://paydayme.com">
-    <meta name="twitter:site" content="@slickcashloan">
+    <meta name="twitter:site" content="">
     <meta name="twitter:description"
         content="With an online loan, you can get the money you need without ever leaving your house. Installment loans from our direct lenders are quick and easy to manage. Apply now and get the funds you need with guaranteed instant approval — bad or no credit welcome.">
     <meta name="twitter:image" content="https://paydayme.com/logo-slick-cash-loan.png">

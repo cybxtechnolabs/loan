@@ -242,8 +242,9 @@
                         will not alter or rescind the meaning of the provisions contained in this document.</p>
                     <p><strong>Contact Information</strong></p>
                     <p>In case You have a request, complaint or enquiry regarding the services provided by the Website,
-                        You can contact us via this email <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="63000c0d1702001723100f0a00080002100b0f0c020d4d000c0e4d">[email&#160;protected]</a>
+                        You can contact us via this email <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
+                                        <?php echo EMAIL ; ?>
+                                    </a>
                         In case You consider Your issue treated improperly, You can also contact the corresponding
                         organizations in Your state of residence authorized to review or resolve the cases of the kind.
                     </p>

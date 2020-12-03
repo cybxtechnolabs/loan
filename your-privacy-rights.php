@@ -37,7 +37,7 @@
                 <div class="tcontentfull">
                     <h2>Privacy Policy</h2>
                     <p>Effective Date: January 21, 2017</p>
-                    <p>The Privacy Policy on paydayme.com (hereinafter we, us, our, ours, Website, Site) is the
+                    <p>The Privacy Policy on <a href="<?php echo BASEURL; ?>">PaydayMe.com </a> (hereinafter we, us, our, ours, Website, Site) is the
                         formal document, which determines and explains how the information of the user (hereinafter
                         User, Users, You, Your, Yours) is collected, stored, shared and used on the Website. This
                         document was elaborated to make formal guarantee of the protection and security of the
@@ -158,8 +158,9 @@
                         close this and all other Website pages. If You have already shared Your personal information
                         with us and want to opt out from further communication and remove Your information from our
                         lists and database, You can contact us directly with respective request using this email address
-                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="d8bbb7b6acb9bbac98abb4b1bbb3bbb9abb0b4b7b9b6f6bbb7b5">[email&#160;protected]</a>
+                        <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
+                                        <?php echo EMAIL ; ?>
+                                    </a>
                         or other contact information indicated on this Website. Your request will be processed and the
                         information removed from our database. As soon as Your information is removed from out database,
                         You can be sure it will not be shared with any third party, used for any secondary purposes, or
@@ -214,9 +215,10 @@
                     <p><strong>Inquiries and Complaints</strong></p>
                     <p>The users of the Website are within their rights to modify, amend and withdraw their PII
                         collected on the Website. In case it is necessary, the user who decides to make changes to their
-                        own information should contact us via email <a href="/cdn-cgi/l/email-protection"
-                            class="__cf_email__"
-                            data-cfemail="0d6e6263796c6e794d7e61646e666e6c7e6561626c63236e6260">[email&#160;protected]</a>
+                        own information should contact us via email 
+                        <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
+                                        <?php echo EMAIL ; ?>
+                                    </a>
                         or other contact details stated on the Website and provide inquiry regarding the modifications
                         to be made. Similarly, if any user of the Website has any complaint regarding the operation on
                         the Website and/or any of its service, this user should use the stated contact details and

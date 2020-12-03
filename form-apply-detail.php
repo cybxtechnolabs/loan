@@ -1,53 +1,63 @@
-<form id="regForm" action="apply.php" method="post">
+<form id="regForm" action="" method="post">
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
 
     <!-- One "tab" for each step in the form: -->
     <div class="tab">
         <h1>About you:</h1>
         <div class="row">
             <div class="col">
-                <label for="borrow">How much do you need to borrow?</label>
-                <input type="text" placeholder="Borrow Amount" value="<?php if(isset($borrow))  { echo $borrow; }; ?>"
+                <label for="borrow">How much do you need to borrow? ($)</label><span class="error"></span>
+                <input id="borrow" type="text" placeholder="Up to $5000" value="<?php if(isset($borrow))  { echo $borrow; }; ?>"
                     name="borrow">
+                
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="fname">First Name </label>
-                <input type="text" placeholder="FirstName" value="" name="fname">
+                <input type="text" placeholder="FirstName" value="" name="fname" id="fname" >
             </div>
             <div class="col">
                 <label for="lname">Last Name </label>
-                <input type="text" placeholder="LastName" value="" name="lname">
+                <input type="text" placeholder="LastName" value="" name="lname" id="lname">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="email">Email </label>
-                <input type="text" placeholder="Email" value="" name="email">
+                <input type="text" placeholder="Email" value="" name="email" id="email">
             </div>
             <div class="col">
                 <label for="cemail">Confirm Email </label>
-                <input type="text" placeholder="Email" value="" name="cemail">
+                <input type="text" placeholder="Email" value="" name="cemail" id="cemail">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="street">Street Address </label>
-                <input type="text" placeholder="No PO Box please" value="" name="street">
+                <input type="text" placeholder="No PO Box please" value="" name="street" id="street">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="city">City</label>
-                <input type="text" placeholder="City" value="" name="city">
+                <input type="text" placeholder="City" value="" name="city" id="city">
             </div>
             <div class="col">
                 <label for="state">State</label>
-                <input type="text" placeholder="State" value="" name="state">
+                <?php include('state-dropdown.php'); ?>
+                
             </div>
         </div>
 
@@ -55,7 +65,7 @@
         <div class="row">
             <div class="col">
                 <label for="mobile">Mobile Phone </label>
-                <input type="text" placeholder="Mobile Phone" value="" name="mobile">
+                <input type="text" placeholder="Mobile Phone" value="" name="mobile" id="mobile">
             </div>
         </div>
 
@@ -63,7 +73,7 @@
         <div class="row">
             <div class="col">
                 <label for="months_at_address">Months at address</label>
-                <select name="months_at_address" id="cars" class="form-control">
+                <select name="months_at_address" id="months_at_address" class="form-control">
                     <option value="1">under 1 year</option>
                     <option value="3">under 3 years</option>
                     <option value="5">under 5 years</option>
@@ -75,7 +85,7 @@
         <div class="row">
             <div class="col">
                 <label for="homeowner">Are You a Homeowner?</label>
-                <select name="homeowner" id="cars" class="form-control">
+                <select name="homeowner" id="homeowner" class="form-control">
                     <option value="250">Yes</option>
                     <option value="500">No</option>
                 </select>
@@ -89,29 +99,29 @@
             </div>
             <div class="col">
                 <label for="license_number">License # </label>
-                <input type="text" placeholder="License #" value="" name="license_number">
+                <input type="text" placeholder="License #" value="" name="license_number" id="license_number">
             </div>
             <div class="col">
                 <label for="license_exp"> License Exp</label>
-                <input type="text" placeholder="License Exp" value="" name="license_exp">
+                <input type="month" placeholder="License Exp" value="" name="license_exp" id="license_exp">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="dob"> Date of birth</label>
-                <input type="text" placeholder="Date of birth" value="" name="dob">
+                <input type="date" placeholder="Date of birth" value="" name="dob" id="dob" min="1900-01-01" max="2020-12-31">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="social_security_number"> Social Security Number </label>
-                <input type="text" placeholder="XXX-XX-XXXX" size="9" value="" name="social_security_number">
+                <input type="text" placeholder="XXX-XX-XXXX" size="9" value="" name="social_security_number" id="social_security_number">
             </div>
             <div class="col">
                 <label for="csocial_security_number"> Confirm Social Security </label>
-                <input type="text" placeholder="XXX-XX-XXXX" size="9" value="" name="csocial_security_number">
+                <input type="text" placeholder="XXX-XX-XXXX" size="9" value="" name="csocial_security_number" id="csocial_security_number">
             </div>
         </div>
     </div>
@@ -136,17 +146,17 @@
             <div class="row Employment1" id="Employment1">
                 <div class="col">
                     <label for="employer_name"> Employer Name</label>
-                    <input type="text" placeholder="Employer Name" value="" name="employer_name">
+                    <input type="text" placeholder="Employer Name" value="" name="employer_name" id="employer_name">
                 </div>
                 <div class="col">
                     <label for="months_employed"> Months Employed</label>
-                    <input type="text" placeholder="Months Employed" value="" name="months_employed">
+                    <input type="text" placeholder="Months Employed" value="" name="months_employed" id="months_employed">
                 </div>
             </div>
             <div class="row Employment2" id="Employment2">
                 <div class="col">
                     <label for="emploer_phone"> Employer Phone</label>
-                    <input type="text" placeholder="Employer Phone" value="" size="10" name="emploer_phone">
+                    <input type="text" placeholder="Employer Phone" value="" size="10" name="emploer_phone" id="emploer_phone">
                 </div>
             </div>
         </span>
@@ -154,14 +164,14 @@
         <div class="row" id="Employment3">
             <div class="col">
                 <label for="gross_monthly_income"> Gross Monthly Income ($))</label>
-                <input type="text" placeholder=" Gross Monthly Income" value="" size="" name="gross_monthly_income">
+                <input type="text" placeholder=" Gross Monthly Income" value="" size="" name="gross_monthly_income" id="gross_monthly_income">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="credit_score">What is your credit score?</label>
-                <select name="credit_score" id="cars" class="form-control">
+                <select name="credit_score" id="credit_score" class="form-control">
                     <option value="Excellent Credit">Excellent Credit (+720)</option>
                     <option value="Good Credit">Good Credit (660-719)</option>
                     <option value="Fair Credit">Fair Credit (500-659)</option>
@@ -183,25 +193,25 @@
         <div class="row">
             <div class="col">
                 <label for="aba_routing_number"> ABA/Routing number</label>
-                <input type="text" placeholder="" value="" name="aba_routing_number" size="9">
+                <input type="text" placeholder="" value="" name="aba_routing_number" id="aba_routing_number" size="9">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="acc_number"> Account Number</label>
-                <input type="text" placeholder="" value="" name="acc_number" size="16">
+                <input type="text" placeholder="" value="" name="acc_number" id="acc_number">
             </div>
             <div class="col">
                 <label for="cacc_number"> Confirm Account Number</label>
-                <input type="text" placeholder="" value="" name="fname" size="cacc_number">
+                <input type="text" placeholder="" value="" name="cacc_number" id="cacc_number" >
             </div>
         </div>
 
         <div class="row">
             <div class="col">
                 <label for="type_of_acc">Type of Account</label>
-                <select name="type_of_acc" id="cars" class="form-control">
+                <select name="type_of_acc" id="type_of_acc" class="form-control">
                     <option value="250">Checking </option>
                     <option value="500">Savings</option>
                 </select>
@@ -227,14 +237,14 @@
             <div class="row">
                 <div class="col card" id="">
                     <label for="card_type"> Type</label>
-                    <select name="card_type" id="cars" class="form-control">
+                    <select name="card_type" id="card_type" class="form-control">
                         <option value="250"> debit </option>
                         <option value="500"> credit</option>
                     </select>
                 </div>
                 <div class="col card" id="">
                     <label for="card_brand"> Brand</label>
-                    <select name="card_brand" id="cars" class="form-control">
+                    <select name="card_brand" id="card_brand" class="form-control">
                         <option value="250"> Visa </option>
                         <option value="500"> Mastercard</option>
                         <option value="500"> Discover</option>
@@ -245,15 +255,15 @@
             <div class="row">
                 <div class="col card" id="">
                     <label for="card_cc"> CC </label>
-                    <input type="text" placeholder="CC" value="" name="card_cc" size="16">
+                    <input type="text" placeholder="CC" value="" name="card_cc" id="card_cc" size="16">
                 </div>
                 <div class="col card" id="">
                     <label for="card_exp"> Exp </label>
-                    <input type="text" placeholder="MM/YY"" value="" name=" card_exp" size="">
+                    <input type="month" placeholder="MM/YY" value="" name="card_exp" id="card_exp" size="">
                 </div>
                 <div class="col card" id="">
                     <label for="card_cvv"> CVV </label>
-                    <input type="text" placeholder="MM/YY"" value="" name=" card_cvv" size="4">
+                    <input type="text" placeholder="CVV" value="" name="card_cvv" id="card_cvv"  >
                 </div>
             </div>
         </span>
@@ -277,17 +287,19 @@
             <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
         </div>
     </div>
-    <!-- Circles which indicates the steps of the form: -->
-    <div style="text-align:center;margin-top:40px;">
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-        <span class="step"></span>
-    </div>
+
 </form>
 
 
+
+<script src="assets/js/form-apply-details-validation.js"></script>
+
+
 <script>
+//ends
+
+
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -303,6 +315,8 @@ function showTab(n) {
     }
     if (n == (x.length - 1)) {
         document.getElementById("nextBtn").innerHTML = "Submit";
+        $( "#nextBtn" ).addClass( "submit" );
+
     } else {
         document.getElementById("nextBtn").innerHTML = "Next";
     }
@@ -314,7 +328,10 @@ function nextPrev(n) {
     // This function will figure out which tab to display
     var x = document.getElementsByClassName("tab");
     // Exit the function if any field in the current tab is invalid:
-    if (n == 1 && !validateForm()) return false; //commented for testing
+
+       if (n == 1 && !validateForm()) return false; //commented for testing
+
+
     // Hide the current tab:
     x[currentTab].style.display = "none";
     // Increase or decrease the current tab by 1:
@@ -335,9 +352,21 @@ function validateForm() {
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
     // A loop that checks every input field in the current tab:
+
+    //console.log(y);
+    //console.log(y.length);
     for (i = 0; i < y.length; i++) {
         // If a field is empty...
-        if (y[i].value == "") {
+        if (y[i].value == "" 
+        && ($(y[i]).attr('id') != 'card_cc') 
+        && ($(y[i]).attr('id') != 'card_exp')
+        && ($(y[i]).attr('id') != 'card_cvv')
+        && ($(y[i]).attr('id') != 'agree_terms')
+        && ($(y[i]).attr('id') != 'employer_name') 
+        && ($(y[i]).attr('id') != 'months_employed') 
+        && ($(y[i]).attr('id') != 'emploer_phone') 
+        
+        ) {
             // add an "invalid" class to the field:
             y[i].className += " invalid";
             // and set the current valid status to false
@@ -345,7 +374,9 @@ function validateForm() {
         }
     }
     // If the valid status is true, mark the step as finished and valid:
+   // alert(valid);
     if (valid) {
+        
         document.getElementsByClassName("step")[currentTab].className += " finish";
     }
     return valid; // return the valid status

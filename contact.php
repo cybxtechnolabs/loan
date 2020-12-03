@@ -4,7 +4,7 @@
 <?php include('head.php'); ?>
 
 
-<link rel="stylesheet" href="form-style.css">
+<link rel="stylesheet" href="assets/css/form-style.css">
 
 <body>
     <div class=page id=main-page>
@@ -118,7 +118,11 @@
 
 
                                 <p>Additional questions or comments?</p>
-                                <p>Email us xxxx@xxx.com</p>
+                                <p>Email us 
+                                    <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
+                                        <?php echo EMAIL ; ?>
+                                    </a>
+                                </p>
                                 <p>or fill out the form below</p>
                                 <p></p>
 

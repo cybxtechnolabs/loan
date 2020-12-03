@@ -2,7 +2,7 @@
 <html lang=en>
 
 <?php include('head.php'); ?>
-<link rel="stylesheet" href="form-style.css">
+<link rel="stylesheet" href="assets/css/form-style.css">
 
 <body>
     <div class=page id=main-page>

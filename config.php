@@ -3,7 +3,7 @@
 
 define("SITENAME", "PAYDAY");
 
-define("BASEURL", "http://localhost/PROJECTS/git/loan/");
+define("BASEURL", "http://localhost/PROJECTS/loan");
 
 define("SERVER", "localhost");
 define("DB_NAME", "loan");
@@ -12,6 +12,10 @@ define("DB_PASSWORD", "");
 
 define("LOAN_TABLE", "loan");
 define("CONTACT_TABLE", "contact");
+
+define("EMAIL", "info@paydayme.com");
+
+
 
 // Create connection
 $conn = mysqli_connect(SERVER, DB_USER, DB_PASSWORD, DB_NAME);
