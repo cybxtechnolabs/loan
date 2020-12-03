@@ -4,7 +4,6 @@
 // });
 $('#regForm input').attr('autocomplete', 'chrome-off');
 
-
 $('#borrow').on('input', function() {
     var input=$(this);
     // var re = /(2[5-8][0-9]|29[0-9]|[3-9][0-9]{2}|[1-4][0-9]{3}|5000)$/;
@@ -321,7 +320,7 @@ if(state == 'State:') {
     $('#state').attr("style", "");
 } else {
     $('#state').removeClass("invalid").addClass("valid");
-    $('#state').attr("style", "background-color:#c1ffdd ; border-color:#0fc2a4 !important");
+   // $('#state').attr("style", "background-color:#c1ffdd ; border-color:#0fc2a4 !important");
 }
 $( "#state" ).change(function() {
     var state = $('#state').find(":selected").text();
