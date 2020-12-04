@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2020 at 11:12 AM
+-- Generation Time: Dec 04, 2020 at 04:36 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -43,6 +43,7 @@ CREATE TABLE `contact` (
 
 CREATE TABLE `loan` (
   `id` int(20) NOT NULL,
+  `application_number` int(7) DEFAULT NULL,
   `borrow` varchar(50) DEFAULT NULL,
   `fname` varchar(50) DEFAULT NULL,
   `lname` varchar(50) DEFAULT NULL,
@@ -103,13 +104,13 @@ ALTER TABLE `loan`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `loan`
 --
 ALTER TABLE `loan`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

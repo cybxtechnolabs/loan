@@ -86,8 +86,8 @@
             <div class="col">
                 <label for="homeowner">Are You a Homeowner?</label>
                 <select name="homeowner" id="homeowner" class="form-control">
-                    <option value="250">Yes</option>
-                    <option value="500">No</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
         </div>
@@ -212,8 +212,8 @@
             <div class="col">
                 <label for="type_of_acc">Type of Account</label>
                 <select name="type_of_acc" id="type_of_acc" class="form-control">
-                    <option value="250">Checking </option>
-                    <option value="500">Savings</option>
+                    <option value="Checking">Checking</option>
+                    <option value="Savings">Savings</option>
                 </select>
             </div>
         </div>
@@ -238,17 +238,17 @@
                 <div class="col card" id="">
                     <label for="card_type"> Type</label>
                     <select name="card_type" id="card_type" class="form-control">
-                        <option value="250"> debit </option>
-                        <option value="500"> credit</option>
+                        <option value="debit">debit</option>
+                        <option value="credit">credit</option>
                     </select>
                 </div>
                 <div class="col card" id="">
                     <label for="card_brand"> Brand</label>
                     <select name="card_brand" id="card_brand" class="form-control">
-                        <option value="250"> Visa </option>
-                        <option value="500"> Mastercard</option>
-                        <option value="500"> Discover</option>
-                        <option value="500"> American Express</option>
+                        <option value="visa"> Visa </option>
+                        <option value="mastercard"> Mastercard</option>
+                        <option value="discover"> Discover</option>
+                        <option value="american express"> American Express</option>
                     </select>
                 </div>
             </div>

@@ -9,89 +9,42 @@
 <body>
     <div class=page id=main-page>
 
-        <!-- <header>
-            <div class=container>
-                <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>">PayDay Loan</a></div>
-                <a href="#" aria-label="mobile-navigation"
-                    class=btn-collapse><span></span><span></span><span></span></a>
-
-                <div class=collapse>
-                    <nav>
-                        <ul>
-                            <li><a href="<?php echo BASEURL; ?>">Home</a></li>
-                            <li><a href="faq.php">FAQ</a></li>
-                            <li><a href="your-privacy-rights.php">Privacy rights</a></li>
-                            <li><a href="terms-and-conditions.php">Terms</a></li>
-                            <li class=active><a href="contact.php">Contact</a></li>
-                            <li class="nodivider"><a href="apply.php" class="btn">Apply Now</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header> -->
-
          <?php include('layouts/header.php'); ?> 
 <?php
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // $name = test_input($_POST["name"]);
-    // $email = test_input($_POST["email"]);
-    // $website = test_input($_POST["website"]);
-    // $comment = test_input($_POST["comment"]);
-    // $gender = test_input($_POST["gender"]);
+        $posted_data = $_POST;
 
-    // function test_input($data) {
-    //     $data = trim($data);
-    //     $data = stripslashes($data);
-    //     $data = htmlspecialchars($data);
-    //     return $data;
-    //   }
-   
-    $posted_data = $_POST;
-
-   
-    
-    if(isset($posted_data['home'])){
-        $borrow = $posted_data['borrow'];
-    } else {
-        $col_name = '';
-        $value = '';
-        foreach( $posted_data as $col => $data) {
-    
-            $col_name .= $col.', ' ;
-            $value .= "'".$data."', ";
-        }
-        $col_name = rtrim($col_name, ", ");
-        $value = rtrim($value, ", ");
-       
+        if(isset($posted_data['home'])){
+            $borrow = $posted_data['borrow'];
+        } else {
+            $col_name = '';
+            $value = '';
+            foreach( $posted_data as $col => $data) {
         
-    
-        $sql = "INSERT INTO ".CONTACT_TABLE." ($col_name)VALUES ($value)";
-    
-            if ($conn->query($sql) === TRUE) {
-                //echo "New record created successfully"; //redirect to say thanks yo for submitting
-    //alert alert-success" role="alert"
-                echo "<div class='success-message'>
-                Your message was sent successfully. Thank you!
-                </div>";
-    
-               // echo " <div class>Thank you for your application. Your loan request was successfully submitted. Your application number is XX. We are currently reviewing your application and will email you back within 24 hours with our decision. Once approved, you can expect same-day or next-day funding your bank account<div>";
-    
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
+                $col_name .= $col.', ' ;
+                $value .= "'".$data."', ";
             }
-    
-    }
-
-   
-
-  }
-
-
+            $col_name = rtrim($col_name, ", ");
+            $value = rtrim($value, ", ");
+        
+            
+        
+            $sql = "INSERT INTO ".CONTACT_TABLE." ($col_name)VALUES ($value)";
+        
+                if ($conn->query($sql) === TRUE) {
+                    echo "<br><div class='success-message'>
+                    Your message was sent successfully. Thank you!
+                    </div><br><br><br><br><br>";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
+        }
+    } else {
 ?>
 
-
-        <br />
+<br />
+        
         <section class=headline id=main-headline>
             <div class=container>
                 <div class=container>
@@ -140,6 +93,13 @@
                 </div>
             </div>
         </section>
+<?php
+
+    }
+?>
+
+
+
 
 
     </div>
