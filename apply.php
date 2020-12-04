@@ -6,8 +6,6 @@
 
 <link rel="stylesheet" href="assets/css/form-apply-style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <style>
 .col {
     padding: 1px 1px 10px 1px;
@@ -16,7 +14,7 @@
 <body>
     <div class=page id=main-page>
 
-        <header>
+        <!-- <header>
             <div class=container>
                 <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>">PayDay Loan</a></div>
                 <a href="#" aria-label="mobile-navigation"
@@ -26,7 +24,6 @@
                     <nav>
                         <ul>
                             <li ><a href="<?php echo BASEURL; ?>">Home</a></li>
-                            <!-- <li><a href="/how-it-works.php">How it works</a></li> -->
                             <li ><a href="faq.php">FAQ</a></li>
                             <li  ><a href="your-privacy-rights.php">Privacy rights</a></li>
                             <li><a href="terms-and-conditions.php">Terms</a></li>
@@ -36,9 +33,9 @@
                     </nav>
                 </div>
             </div>
-        </header>
+        </header> -->
 
-        <!-- <?php //include('header.php'); ?> -->
+        <?php include('layouts/header.php'); ?>
 
         <br />
 <?php 

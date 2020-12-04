@@ -7,7 +7,7 @@
 <footer class="footer" style="valign:bottom;">
         <div class=container>
             
-            <p>&copy;2020 PayDay Loan  All rights reserved. <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
+            <p>&copy;2020 <?php echo SITENAME; ?>  All rights reserved. <a href="mailto:<?php echo EMAIL ; ?>" class="__cf_email__">
                                         <?php echo EMAIL ; ?>
                                     </a>
             </p>

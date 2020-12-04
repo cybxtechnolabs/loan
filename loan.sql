@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2020 at 04:12 PM
+-- Generation Time: Dec 04, 2020 at 11:12 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `loan`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(10) NOT NULL,
+  `contact_name` varchar(20) NOT NULL,
+  `contact_email` varchar(20) NOT NULL,
+  `contact_application_number` varchar(10) NOT NULL,
+  `contact_message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -70,6 +84,12 @@ CREATE TABLE `loan` (
 --
 
 --
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `loan`
 --
 ALTER TABLE `loan`
@@ -78,6 +98,12 @@ ALTER TABLE `loan`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `loan`

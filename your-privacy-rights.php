@@ -37,7 +37,7 @@
                 <br />
                 <div class="tcontentfull">
                     <h2>Privacy Policy</h2>
-                    <p>Effective Date: January 21, 2017</p>
+                    <p>Effective Date: January 21, 2020</p>
                     <p>The Privacy Policy on <a href="<?php echo BASEURL; ?>">PaydayMe.com </a> (hereinafter we, us, our, ours, Website, Site) is the
                         formal document, which determines and explains how the information of the user (hereinafter
                         User, Users, You, Your, Yours) is collected, stored, shared and used on the Website. This

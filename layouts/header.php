@@ -1,8 +1,8 @@
 <header>
     <div class=container>
-        <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>">PayDay Loan</a></div>
+        <div class="logotext"> <a class="logotext-anchor" href="<?php echo BASEURL; ?>"><?php echo SITENAME; ?></a></div>
         <a href="#" aria-label="mobile-navigation" class=btn-collapse><span></span><span></span><span></span></a>
-        <div class=collapse>
+        <div class=collapse-theme>
             <nav>
                 <ul>
                     <li  <?php  if(strpos($_SERVER['PHP_SELF'],"index") != false) { echo 'class=active';}?> ><a href="<?php echo BASEURL; ?>">Home</a></li>

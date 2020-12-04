@@ -112,9 +112,9 @@ $('#mobile').on('input', function() {
 
 $('#license_number').on('input', function() {
     var input=$(this);
-    var re = /^[0-9]*$/;
-    var license_number=re.test(input.val());
-  //  var city=input.val();
+   // var re = /^[0-9]*$/;
+   // var license_number=re.test(input.val());
+    var license_number=input.val();
 	if(license_number){
         input.removeClass("invalid").addClass("valid");
         $(this).attr("style", "background-color:#c1ffdd ; border-color:#0fc2a4 !important");
